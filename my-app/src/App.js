@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
-import ReactBootstrapSlider from 'react-bootstrap-slider';
 import Spinner from './Spinner.js'
+import HeaderBar from './HeaderBar'
 import './App.css';
+import '../css/jackpot.css'
+global.jQuery = require('jquery');
+import '../css/bootstrap-theme.min.css'
+import '../css/bootstrap.min.css'
 
 function Figure(name, image) {
     this.name = name;
@@ -13,7 +17,6 @@ function Figure(name, image) {
 class App extends Component {
     constructor(props){
         super(props);
-        console.log("app");
         this.startValue = props.startValue;
     }
 
@@ -40,15 +43,9 @@ class App extends Component {
         var figures = this.getFigures();
         return (
             <div>
-                <div className="headerBar">
-                    <ReactBootstrapSlider id="slider" type="text" data-slider-min="1" data-slider-max="20"
-                                          data-slider-step="1" data-slider-value="1"/>
-                    <p className="glyphicon glyphicon-plus-sign"/>
-                    <p className="glyphicon glyphicon-minus-sign"/>
-                    <p className="glyphicon glyphicon-repeat"/>
-                </div>
-                {this.getSpinners().map(function(){
-                    return <Spinner figures={figures}/>
+                <HeaderBar/>
+                {this.getSpinners().map(function(key){
+                    return <Spinner key={key} figures={figures}/>
                 })}
             </div>
         );

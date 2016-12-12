@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    background-image: url("../images/backgroundPage.jpg");
+}
+
+#slider{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#slider .slider-selection {
+    background: #BABABA;
+
+}
+
+.headerBar{
+    font-size:3em;
+}
+
+.headerBar > p {
+    margin-right: 10px;
+}
+
+.imageDiv{
+    display:inline-block;
+
+}
+
+.img-circle {
+    border-radius: 50%;
+
+}

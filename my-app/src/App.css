@@ -22,11 +22,3 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-.imageDiv{
-  display:inline-block;
-}
-
-.img-circle {
-  border-radius: 50%;
-}
