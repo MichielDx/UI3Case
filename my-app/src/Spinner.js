@@ -8,9 +8,10 @@ class Spinner extends Component {
     }
 
     render() {
+        var figure = this.figures[Math.floor(Math.random() * this.figures.length)];
         return (
             <div className="imageDiv">
-                <img title="McCree" className="img-circle img-responsive" src={require("../images/spinners/mccree.png")}/>
+                <img title="McCree" alt={figure.name} className="img-circle img-responsive" src={figure.image}/>
                 <p>McCree</p>
             </div>);
     }
