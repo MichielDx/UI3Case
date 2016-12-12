@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-image: url("../images/backgroundPage.jpg");
+}
+
+p.glyphicon{
+}
+
+#slider{
+    vertical-align: middle;
+}
+
+#slider .slider-selection {
+    background: #BABABA;
+}
+
+.headerBar{
+    font-size:3em;
+}
+
+.imageDiv{
+    display:inline-block;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
